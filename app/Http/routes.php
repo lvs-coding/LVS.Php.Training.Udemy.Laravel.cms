@@ -14,3 +14,20 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/about', function () {
+    return "Hi about page";
+});
+
+Route::get('/contact', function () {
+    return "hi i'm contact";
+});
+
+Route::get('/post/{id}', function ($id) {
+    return "This is post number " . $id;
+});
+
+Route::get('/admin/posts/example', array('as'=>'admin.home',function() {
+    $url = route('admin.home');
+    return "this is url " . $url;            
+}));
