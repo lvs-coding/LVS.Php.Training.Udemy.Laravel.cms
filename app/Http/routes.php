@@ -2,7 +2,12 @@
 
 //Route::get('/post/{id}','PostsController@index');
 
-Route::resource('posts','PostsController');
+//Route::resource('posts','PostsController');
+
+Route::resource('post/{id}/{firstName}/{lastName}','PostsController@showPost');
+
+
+Route::get('/contact','PostsController@contact');
 
 /*
 |--------------------------------------------------------------------------
