@@ -3,11 +3,11 @@
 //Route::get('/post/{id}','PostsController@index');
 
 //Route::resource('posts','PostsController');
-
-Route::resource('post/{id}/{firstName}/{lastName}','PostsController@showPost');
-
-
-Route::get('/contact','PostsController@contact');
+//
+//Route::get('post/{id}/{firstName}/{lastName}','PostsController@showPost');
+//
+//
+//Route::get('/contact','PostsController@contact');
 
 /*
 |--------------------------------------------------------------------------
@@ -20,9 +20,9 @@ Route::get('/contact','PostsController@contact');
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+Route::get('/', function () {
+    return view('welcome');
+});
 //
 //Route::get('/about', function () {
 //    return "Hi about page";
